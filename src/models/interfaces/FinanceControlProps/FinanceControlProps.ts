@@ -1,8 +1,7 @@
-import {Movement} from '../Movement/Movement';
+import type { Movement } from "../Movement/Movement";
 
 export interface FinanceControlProps {
-handleNewMovement: (movement: Movement) => void;
-balance: number;
-expense: number;
-
+  balance: number; // Current balance
+  expense: number; // Current expense
+  handleNewMovement: (movement: Movement) => void; // Function to handle new movements
 }
