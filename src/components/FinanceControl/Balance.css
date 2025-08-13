@@ -72,7 +72,7 @@
 
 .input_form_container.invalid input {
   background: #e43f4d7a;
-  box-shadow: inset #e43f4d 0 0 0 2px;
+  box-shadow: inset #a12e38 0 0 0 2px;
 }
 
 .actions_form_buttons_container {
