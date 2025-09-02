@@ -26,7 +26,7 @@ const Balance = ({emitMovement,currentBalance}: BalanceProps) => {
     <div className="balance_container">
       <div className="balance_card">
         <header className="balance_header">
-          <FontAwesomeIcon icon={faWallet} color="#000" size="2x" />
+          <FontAwesomeIcon icon={faWallet} color="#7af1a7" size="2x" />
           <h2>Saldo</h2>
         </header>
         <h3>{currentBalance > 0 ? `R$ ${currentBalance.toFixed(2)}` : "R$ 0,00"}</h3>
