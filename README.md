@@ -1,69 +1,75 @@
-# React + TypeScript + Vite
+# CLA-FinancesSystem
+Repositório com um sistema de gerenciamento financeiro pessoal desenvolvido em **React**, **TypeScript** e **Vite**.  
+O projeto permite controlar receitas, despesas e visualizar o saldo atual de forma simples e eficiente.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📚 Descrição
 
-Currently, two official plugins are available:
+O aplicativo possibilita ao usuário:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Adicionar, editar e remover receitas e despesas
+- Visualizar o saldo atual de forma automática
+- Filtrar transações por categoria e data
+- Acessar uma interface limpa, moderna e responsiva
 
-## Expanding the ESLint configuration
+O objetivo é fornecer uma ferramenta prática para controle financeiro pessoal, com fácil navegação e organização das informações.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Estrutura
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O código está organizado em componentes React e páginas, facilitando a manutenção e expansão do projeto.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Principais diretórios:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `public/` – Arquivos públicos estáticos
+- `src/` – Código-fonte da aplicação
+  - `assets/` – Imagens e ícones
+  - `components/` – Componentes reutilizáveis
+  - `pages/` – Páginas do sistema
+  - `services/` – Lógica de negócios e manipulação de dados
+  - `App.tsx` – Componente principal da aplicação
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Como executar
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Certifique-se de ter **Node.js** e **npm** instalados.  
+   Você pode verificar com os comandos:
+   ```bash
+   node -v
+   npm -v
+Clone o repositório:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+bash
+Copiar código
+git clone https://github.com/LuccaChris/CLA-FinancesSystem.git
+Instale as dependências:
+
+bash
+Copiar código
+cd CLA-FinancesSystem
+npm install
+Inicie o servidor de desenvolvimento:
+
+bash
+Copiar código
+npm run dev
+Abra o navegador em http://localhost:5173 para acessar o sistema.
+
+✅ Requisitos
+Node.js 18 ou superior
+
+npm 9 ou superior
+
+Navegador moderno (Chrome, Edge, Firefox)
+
+## 📈 Melhorias Futuras
+Implementar autenticação de usuário
+
+Conectar a um banco de dados para persistência de dados
+
+Adicionar gráficos de análise financeira
+
+Criar notificações de despesas e alertas de orçamento
+
+## ✍️ Autor
+Christian Lucca
+
+🔗 Acesso Online
+O projeto está hospedado no GitHub Pages: https://luccachris.github.io/CLA-FinancesSystem/
