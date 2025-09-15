@@ -23,10 +23,16 @@ function App() {
         return movements;
       });
 
-      movement.type === "Input" && setCurrentBalance((prevBalance) => prevBalance + Number(movement.value));
+      movement.type === "Input" && 
+      setCurrentBalance(
+        (prevBalance) => prevBalance + Number(movement.value));
       if (movement.type === "Output") {
-        movement.type === "Output" && setCurrentExpense((prevExpense) => prevExpense + Number(movement.value));
-        currentBalance > 0 && setCurrentBalance((prevBalance) => prevBalance - Number(movement.value));
+        movement.type === "Output" &&
+         setCurrentExpense(
+          (prevExpense) => prevExpense + Number(movement.value));
+        currentBalance > 0 && 
+        setCurrentBalance(
+          (prevBalance) => prevBalance - Number(movement.value));
       }
     }
   };
