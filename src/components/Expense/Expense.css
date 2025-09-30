@@ -1,10 +1,10 @@
-.balance_container {
+.expense_container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.balance_card {
+.expense_card {
   background-color: #36383e;
   display: flex;
   justify-content: center;
@@ -15,21 +15,21 @@
   border-radius: 1.2rem;
 }
 
-.balance_header {
+.expense_header {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -2rem;
 }
 
-.balance_card h2 {
+.expense_card h2 {
   margin-left: 1rem;
   font-weight: 500;
   font-size: 2.2rem;
   color: #dddcda;
 }
 
-.balance_card h3 {
+.expense_card h3 {
   margin-left: 1rem;
   font-weight: 500;
   font-size: 2.2rem;
@@ -43,7 +43,7 @@
   gap: 0.8rem;
 }
 
-.balance_input {
+.expense_input {
   box-shadow: inset #dddcda 0 0 0 2px;
   border: 0;
   background: rgba(0, 0, 0, 0);
@@ -60,11 +60,11 @@
   transition: all 0.2s ease;
 }
 
-.balance_input:hover {
+.expense_input:hover {
   box-shadow: 0 0 0 0 #fff inset, #7af1a7 0 0 0 2px;
 }
 
-.balance_input:focus {
+.expense_input:focus {
   background: #ffffff00;
   outline: 0;
   box-shadow: 0 0 0 0 #fff inset, #7af1a7 0 0 0 3px;
@@ -72,7 +72,7 @@
 
 .input_form_container.invalid input {
   background: #e43f4d7a;
-  box-shadow: inset #a12e38 0 0 0 2px;
+  box-shadow: inset #e43f4d 0 0 0 2px;
 }
 
 .actions_form_buttons_container {

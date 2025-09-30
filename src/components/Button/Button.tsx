@@ -4,8 +4,8 @@ import "./Button.css"
 
 const Button = ({title, priority, action, type, disabled}: ButtonProps) => {
     return(
-        <button 
-        className={`btn ${priority === "input"? "greenBg" : "redBg"}`}
+        <button
+        className={`btn ${priority === "Input"? "greenBg" : "redBg"}`}
         onClick={action} 
         type={type ? type : "button"} 
         disabled={disabled ? disabled : false}
