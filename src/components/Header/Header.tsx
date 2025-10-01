@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className="header_container">
             <FontAwesomeIcon icon={faMoneyBillWave} color ="#7Af1a7" size="2x"/>
-            <h2>My Header</h2>
+            <h2>My finance</h2>
         </header>
     );
 };
